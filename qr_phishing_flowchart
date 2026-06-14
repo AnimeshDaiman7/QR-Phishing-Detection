@@ -1,0 +1,23 @@
+digraph {
+	A [label=Start]
+	B [label="Upload QR Code"]
+	C [label="Decode QR (OpenCV)"]
+	D [label="Extract URL"]
+	E [label="Handle Redirection"]
+	F [label="Feature Extraction"]
+	G [label="ML Model (Naive Bayes)"]
+	H [label=Prediction]
+	I [label="Safe or Phishing"]
+	J [label="Display Result (UI)"]
+	K [label=End]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+	H -> I
+	I -> J
+	J -> K
+}
