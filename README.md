@@ -1,16 +1,17 @@
 # QR Phishing Detection
 
-A machine learning-based system that detects phishing URLs hidden inside QR codes.
+## Overview
+
+This project uses Machine Learning to detect phishing URLs embedded in QR codes.
 
 ## Features
 
 - QR Code Generation
-- URL Extraction
-- Feature Engineering
+- URL Feature Extraction
+- Phishing Detection
 - Machine Learning Classification
-- Safe/Phishing Detection
 
-## Technologies
+## Technologies Used
 
 - Python
 - Scikit-Learn
@@ -20,18 +21,30 @@ A machine learning-based system that detects phishing URLs hidden inside QR code
 
 ## Project Structure
 
-```text
-QR-Phishing-Detection/
-├── src/
-├── dataset/
-├── models/
-├── images/
+```
+QR-Phishing-Detection
 ├── app.py
+├── model.py
+├── feature_extraction.py
+├── dataset.csv
+├── model.pkl
+└── README.md
 ```
 
-## Run
+## How to Run
 
 ```bash
 pip install -r requirements.txt
 python app.py
 ```
+
+## Sample Output
+
+The system classifies QR codes as:
+
+- Safe
+- Phishing
+
+## Author
+
+Animesh Daiman
